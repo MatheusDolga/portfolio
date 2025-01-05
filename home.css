@@ -1,0 +1,76 @@
+:root {
+    --background: #FFC600;
+    --shadowColor: #ff0000;
+    --bgBlend: normal;
+}
+
+:root[class="dark"]{
+    --background: #4c3e0b;
+    --shadowColor: #ff0000;
+    --bgBlend: exclusion;
+}
+
+#homePhoto {
+    float: right;
+    width: 200px;
+    margin: 20px;
+    border: solid var(--text-color) 7px;
+    box-shadow: 10px 10px
+}
+
+#arrow {
+   width: fit-content;
+   margin: auto;
+}
+
+#cambridge {
+    width: 100px;
+}
+
+#cisco,#cisco2, #cisco3 {
+    width: 100px;
+}
+
+#cotemig {
+    width: 110px;
+    margin-right:10px;
+}
+
+#programGrid div {
+    width:unset
+}
+
+@media screen and (max-width: 655px) {
+
+#homePhoto {
+    float: none;
+    margin-left: 15%;
+    width: 70%;
+}
+
+#cambridge {
+    grid-row: 2;
+}
+
+#cisco {
+    grid-row: 4;
+}
+
+#cisco2 {
+    grid-row: 6;
+}
+
+#cisco3 {
+    grid-row: 8;
+}
+
+#cotemig {
+    grid-row: 10;
+}
+
+}
+
+#middleSeparator {
+    margin-bottom: 100px;
+
+}

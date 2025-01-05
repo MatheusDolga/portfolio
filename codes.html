@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Dolga</title>
+    <link rel="stylesheet" href="codes.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicons/favicons2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <img src="imgs/icons/image 2.png" alt="Home" onclick="animatedRedirect('index.html')"></div></li>
+            <li id="excludedIcon"> <img src="imgs/icons/image 1.png" alt="Codes"></li>
+            <li> <img src="imgs/icons/image 3.png" alt="Galeria" onclick="animatedRedirect('gallery.html')"></li>
+            <li> <img src="imgs/icons/image 4.png" alt="Contato" onclick="animatedRedirect('contact.html')"></li>
+            <a href="https://github.com/MatheusDolga" target="_blank"><li> <img src="imgs/icons/image 5.png" alt="Github"></li></a>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Trabalhos de Programação</h1>
+            <div>
+                <p id="introText"> 
+                    Alguns exemplares de sites, mecânicas e programas escritos por mim.  
+                </p>
+            </div>
+            <div id="programGrid">
+                <img src="imgs/godot.png" alt="Godot" id="logoGodot">
+                <div>Para vários projetos pessoais, utilizo da linguagem GDScript no programa Godot, ambos direcionados para o desenvolvimeno de jogos.</div>
+                <img src="imgs/vstudio.png" alt="Visual Studio e Visual Studio Code" id="logoVS">
+                <div>Também tenho experência com o Visual Studio, com foco no Windows Forms, e Visual Studio Code, para a criação de conjuntos HTML + CSS.</div>
+            </div>
+        </div>
+
+        <div class="richVideoHolder">
+            <div class="rvhResizer">
+                <iframe class="rvhVideo"  src="https://www.youtube.com/embed/mN3uG5NEbsY?si=n_oo6lzdJOVb3dR9"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="rvhDescriptionHolder" id="rvhm1">
+                <div class="rvhDescription">
+                    <p>‘Fugitive Aero’</p>
+                    <p>Feito em GDScript, cancelado.</p>
+                    <p>Sistema de janelas modificáveis. Personagem controlado por teclado.</p>
+                   
+                    <div class="rvhMovementButton" onclick="rvhDoMovement('rvhm1',false)">
+                    <img src="imgs/icons/movement.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="richVideoHolder rvhLeftRecenter">
+            <div class="rvhDescriptionHolder" id="rvhm2">
+                <div class="rvhDescription">
+                    <p>‘We can sprite everything’</p>
+                    <p>Feito em C#.</p>
+                    <p>Compilador de spritesheets automatizado.</p>
+                    <p>Fornecem-se várias imagens e configura-se as dimensões da grade final.</p>
+                    <div class="rvhMovementButton" onclick="rvhDoMovement('rvhm2',true)">
+                    <img src="imgs/icons/movement.png" alt=""></div>
+                </div>
+            </div>
+            <div class="rvhResizer">
+                <iframe class="rvhVideo"  src="https://www.youtube.com/embed/z1dZQfzxn_E?si=2_sADZognK5QJSfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="richVideoHolder">
+            <div class="rvhResizer">
+                <iframe class="rvhVideo"  src="https://www.youtube.com/embed/wwrZgkK-hkw?si=NUojTIuHhnPHU64D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="rvhDescriptionHolder" id="rvhm3">
+                <div class="rvhDescription">
+                    <p>‘Idlecorp’</p>
+                    <p>Feito em GDScript, ainda em desenvolvimento.</p>
+                    <p>Jogo controlato por mouse.</p>
+                    <p>Projeto baseado no jogo “Lobotomy Corporation”. Visuais e lógica feitas por mim.</p>
+                    <div class="rvhMovementButton" onclick="rvhDoMovement('rvhm3',false)">
+                    <img src="imgs/icons/movement.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="richVideoHolder rvhLeftRecenter">
+            <div class="rvhDescriptionHolder" id="rvhm4">
+                <div class="rvhDescription">
+                    <p>‘Munch Munch Harvest’</p>
+                    <p>Feito em HTML e CSS.</p>
+                    <p>Protótipo de um site de delivery.</p>
+                    <p>Imagens de uso livre vindas de Freepik e Unsplash.</p>
+                    <div class="rvhMovementButton" onclick="rvhDoMovement('rvhm4',true)">
+                    <img src="imgs/icons/movement.png" alt=""></div>
+                </div>
+            </div>
+            <div class="rvhResizer">
+                <iframe class="rvhVideo"  src="https://www.youtube.com/embed/xWMKTzAid5I?si=jgHg4UJc928moXMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="defaultHolderDiv">
+            <div id="footerGithub">
+                <p>Os códigos destes e outros projetos estão hospedados em meu <a href="https://github.com/MatheusDolga" target="_blank">Github</a></p>
+                <img src="imgs/icons/image 5.png" alt="Logo do Github" id="footerGithubImg">
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div>
+            <div>matheusdolga@gmail.com</div>
+            <img src="imgs/icons/nightmode.png" onclick="switchColors()">
+        </div>     
+    </footer>
+    <div id="transitionFade"></div>
+</body>
+</html>

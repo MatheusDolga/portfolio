@@ -1,0 +1,359 @@
+:root {
+    --background: #FF7979;
+    --shadowColor: #ff0000c4;
+    --bgBlend: color-dodge;
+}
+
+:root[class="dark"]{
+    --background: #561c32;
+    --shadowColor: #ff0000c4;
+    --bgBlend: exclusion;
+}
+
+
+#logoFA {
+    width: 110px;
+}
+#logoGimp {
+    width: 120px;
+}
+
+#logoDav {
+    width: 100px;
+}
+
+.galleryImageHolder {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galleryImageHolder img {
+    transition: 0.2s;
+}
+
+.galleryImageHolder:hover img {
+    transform: scale(1.06);
+}
+
+#galleryDialog {
+    position: fixed;
+    margin: auto;
+    top: 5vh;
+    width: 90vw;
+    height: 90vh;
+    background-color: #ffffff69;
+    z-index: 11;
+}
+
+@keyframes popIn {
+    0% {transform: scale(0.1); opacity: 0%;}
+    100% {transform: scale(1); opacity: 100%;}
+}
+
+@keyframes popOut {
+    0% {transform: translateX(0); opacity: 100%;}
+    100% {transform: translateX(100vw); opacity: 0%;}
+}
+
+#dialogImgHolder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+}
+
+#dialogImage {
+    width: 80%;
+    object-fit: scale-down;
+}
+
+.popInTrigger {
+    animation: popIn 0.2s ease-in-out;
+}
+
+.popOutTrigger {
+    animation: popOut 0.2s ease-in-out;
+}
+
+#galleryMain {
+    width: 75%;
+    position: relative;
+    flex-direction: column;
+}
+
+.galleryImageHolder {
+    overflow: hidden;
+    width: 75vw;
+}
+
+.galleryImageHolder img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#galleryDialogToggle {
+    top: -3vh;
+    right: -3vh;
+}
+
+#doubleBatch1, #doubleBatch2, #doubleBatch3, #doubleBatch4 {
+    width: 100%;
+    display: flex;
+
+}
+
+#doubleBatch1 {
+    margin-bottom: 3vh;
+}
+
+#GIH1 {
+    width: 500px;
+    height: 500px;
+}
+
+#GIH1 img {
+    height: 100%;
+    width: auto;
+
+}
+
+#GIH2 {
+    margin-top: 3vh;
+    margin-left: auto;
+    width: 400px;
+    height: 600px;
+    margin-left: 10vw;
+}
+
+
+#GIH3 {
+    margin-right: 14vw;
+    margin-top: -10vh;
+    width: 400px;
+    height: 400px;
+}
+
+#GIH3 img {
+    height: unset;
+}
+
+#GIH4 {
+    width: 300px;
+    height: 295px;
+    margin-left: -8vw;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
+
+#GIH5 {
+    margin: auto;
+    width: 85%;
+    height: 300px;
+    margin-bottom: 4vh;
+}
+
+#GIH6 {
+    margin-left: -4vw;
+    width: 500px;
+    height: 500px;
+}
+
+#GIH7 {
+    margin-top: 4vw;
+    margin-left: 8vw;
+    width: 300px;
+    height: 350px;
+}
+
+
+#GIH8 {
+    width: 275px;
+    height: 275px;
+}
+
+#GIH9 {
+    margin-left: 4vw;
+    width: 650px;
+    height: 500px;
+}
+
+#aacVideo {
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    display: block;
+    width: fit-content;
+}
+
+#aacVideo .rvhResizer {
+    width: 100%;
+}
+
+#aacVideo iframe {
+
+    border: none;
+    width: 550px;
+}
+
+@media screen and (max-width: 930px)
+{
+
+#doubleBatch1, #doubleBatch2, #doubleBatch3, #doubleBatch4 {
+    flex-flow: column;
+}
+
+#doubleBatch1 {
+    margin-bottom: 13vh;
+}
+
+#GIH4 {
+    margin-left: 12vh;
+}
+
+#GIH8 {
+    margin-top: 3vh;
+}
+
+#GIH9 {
+    width: 550px;
+    margin-top: 4vh;
+}
+
+}
+
+@media screen and (max-width: 600px)
+{
+
+#doubleBatch1 {
+    margin-bottom: 13vh;
+}
+
+#GIH1 {
+    width: 35vh;
+    height: 35vh;
+}
+
+
+#GIH2 {
+    margin-top: 3vh;
+    margin-left: auto;
+    width: 30vh;
+    height: 80vh;
+    margin-left: 10vw;
+}
+
+#GIH2 img {
+    object-position: -50vw;
+}
+
+
+#GIH3 {
+    margin-right: 14vw;
+    margin-top: -10vh;
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 3vh;
+}
+
+#GIH4 {
+    width: 60vw;
+    height: 59vw;
+    margin-left: 13vw;
+    margin-top: 7vh;
+}
+
+#GIH5 {
+    margin: auto;
+    width: 60vw;
+    height: 300px;
+    margin-bottom: 4vh;
+}
+
+#GIH5 img {
+    object-position: 24%;
+}
+
+#GIH6 {
+    margin-left: -4vw;
+    width: 70vw;
+    height: 70vw;
+}
+
+#GIH7 {
+    margin-top: 4vw;
+    margin-left: 8vw;
+    width: 60vw;
+    height: 70vw;
+}
+
+
+#GIH8 {
+    width: 25vh;
+    height: 25vh;
+}
+
+#GIH9 {
+    width: 70vw;
+    height: 60vh;
+}
+
+#GIH9 img {
+object-position: 32%;
+}
+
+#aacVideo .rvhResizer {
+    width: 100%;
+}
+
+#aacVideo .rvhResizer {
+    width: 100%;
+}
+
+#aacVideo iframe {
+    width: 75vw;
+}
+
+#galleryDialog {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff69;
+    z-index: 11;
+}
+
+@keyframes popIn {
+    0% {transform: scale(0.1); opacity: 0%;}
+    100% {transform: scale(1); opacity: 100%;}
+}
+
+@keyframes popOut {
+    0% {transform: translateX(0); opacity: 100%;}
+    100% {transform: translateX(100vw); opacity: 0%;}
+}
+
+#dialogImgHolder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+}
+
+#dialogImage {
+    width: 96.5vw;
+    object-fit: scale-down;
+}
+
+#galleryDialogToggle {
+   right: 0px;
+   top: 0px;
+}
+
+}

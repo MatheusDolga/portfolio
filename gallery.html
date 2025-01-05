@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Dolga</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicons/favicons3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body onload="connectEscKey()">
+    <nav>
+        <ul>
+            <li> <img src="imgs/icons/image 2.png" alt="Home" onclick="animatedRedirect('index.html')"></div></li>
+            <li><img src="imgs/icons/image 1.png" alt="Codes" onclick="animatedRedirect('codes.html')"></li>
+            <li id="excludedIcon"> <img src="imgs/icons/image 3.png" alt="Galeria"></li>
+            <li> <img src="imgs/icons/image 4.png" alt="Contato" onclick="animatedRedirect('contact.html')"></li>
+            <a href="https://github.com/MatheusDolga" target="_blank"><li> <img src="imgs/icons/image 5.png" alt="Github"></li></a>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Galeria de Projetos visuais</h1>
+            <div>
+                <p id="introText"> 
+                    Pelos últimos 4 anos, tenho atuado como desenhista e animador amador. Tenho grande foco em um estilo cartunesco, com linhas geralmente grossas. 
+                </p>
+            </div>
+            <div id="programGrid">
+                <img src="imgs/firealpaca.png" alt="Godot" id="logoFA">
+                <div>Utilizo principalmente o Firealpaca como meu programa de desenho. ambém realizo minhas animações nativamente com o mesmo;</div>
+                <img src="imgs/gimp.png" alt="Visual Studio e Visual Studio Code" id="logoGimp">
+                <div>Tenho conhecimento básico com o GIMP, utilizando-o cotidianamente como compilador de GIF’s e para criar padrões mais complexos;</div>
+                <img src="imgs/davinci.png" alt="Visual Studio e Visual Studio Code" id="logoDav">
+                <div>Para editar vídeos, uso do Davinci Resolve. Muitas vezes também compilo animações no mesmo.</div>
+            </div>
+        </div>
+
+        <div class="defaultHolderDiv" id="galleryMain">
+
+            <div class= "defaultHolderDiv" id="doubleBatch1">
+                <div class="galleryImageHolder" id="GIH1">
+                    <img src="imgs/0047.gif" alt="" onclick="openImagePopup(1)">
+                </div>
+                <div class="galleryImageHolder" id="GIH2">
+                    <img src="imgs/0101.gif" alt="" onclick="openImagePopup(2)">
+                </div>
+            </div>
+
+            <div class="defaultHolderDiv" id="doubleBatch2">
+                <div class="galleryImageHolder" id="GIH3">
+                    <img src="imgs/gift_neon.png" alt="" onclick="openImagePopup(3)">
+                </div>
+                <div class="galleryImageHolder" id="GIH4">
+                    <img src="imgs/KromerSmile.png" alt="" onclick="openImagePopup(4)">
+                </div>
+            </div>
+
+            <div class="galleryImageHolder" id="GIH5">
+                <img src="imgs/tanea.png" alt="" onclick="openImagePopup(5)">
+            </div>
+
+            <div class="defaultHolderDiv" id="doubleBatch3">
+                <div class="galleryImageHolder" id="GIH6">
+                    <img src="imgs/hdwgh_dersetheme_new.png" alt="" onclick="openImagePopup(6)">
+                </div>
+                <div class="galleryImageHolder" id="GIH7">
+                    <img src="imgs/zine_drawings.png" alt="" onclick="openImagePopup(7)">
+                </div>
+            </div>
+
+        <div class="richVideoHolder" id="aacVideo">
+            <div class="rvhResizer">
+                <iframe class="rvhVideo"  src="https://www.youtube.com/embed/vaYUdskIa90?si=ORDdfnLjWiw5jPkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+            <div class="defaultHolderDiv" id="doubleBatch3">
+                <div class="galleryImageHolder" id="GIH8">
+                    <img src="imgs/Atlas_png.png" alt="" onclick="openImagePopup(8)">
+                </div>
+                <div class="galleryImageHolder" id="GIH9">
+                    <img src="imgs/limbus_SD_hongle.png" alt="" onclick="openImagePopup(9)">
+                </div>
+            </div>
+        </div>
+
+        <dialog id="galleryDialog">
+            <div id="dialogImgHolder">
+                <img src="" id="dialogImage">
+            </div>
+            <div id="galleryDialogToggle" onclick="closeImagePopup()">
+                <img src="imgs/icons/cancel.png" alt=""></div>
+            </div>
+        </dialog>
+        
+    </main>
+    <footer>
+        <div>
+            <div>matheusdolga@gmail.com</div>
+            <img src="imgs/icons/nightmode.png" onclick="switchColors()">
+        </div>     
+    </footer>
+    <div id="transitionFade"></div>
+</body>
+</html>

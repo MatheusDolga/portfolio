@@ -1,0 +1,194 @@
+:root {
+    --background: #1B78CE;
+    --shadowColor: #ff0000c4;
+    --bgBlend: exclusion;
+    --submit-color: rgb(228, 128, 206);
+    --submit-color-hover: rgb(243, 177, 229);
+}
+
+:root[class="dark"]{
+    --background: #395686;
+    --shadowColor: #12a8ff;
+    --bgBlend: color-burn;
+    --submit-color: #390000;
+    --submit-color-hover: #250808;
+}
+
+#filledMain {
+    min-height: 94vh;
+}
+
+#title {
+     margin-bottom: 0; 
+}
+
+footer {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+
+    grid-template-areas:
+    'name email'
+    'subject cel'
+    'message submit';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+
+    gap: 4%;
+
+    width: 75%;
+    height: 53.6vh;
+    margin-bottom: 7.5vh;
+
+    
+}
+
+form div input, form div textarea {
+    font-family: 'Krona One';
+    color: var(--text-color);
+    text-shadow: 0px 0.2vh var(--shadowColor);
+    width: 100%;
+    height: 100%;
+
+    padding: 2vh;
+}
+
+form div input {
+    height: 60px;
+}
+
+input ,textarea {
+    font-size: 18px;
+}
+
+form div textarea {
+    resize: none;
+    height: 33vh;
+    width: 210%
+}
+
+form div {
+    position: relative;
+}
+
+form div label{
+    position: absolute;
+    
+    font-family: 'Krona One';
+    text-shadow: 0px 0.2vh var(--shadowColor);
+    color: var(--text-color);
+    position: absolute;
+    transition: 0.4s;
+    user-select: none;
+    z-index: 2;
+
+    left: 1.1vw;
+}
+
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label{
+    transform: scale(0.7) translate(-1.1vw, -3.5vh);
+    
+}
+
+input ~ label {
+    top: 35%;
+}
+
+textarea ~ label {
+    top: 2.7vh;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label{
+    transform: scale(0.7) translate(-1.3vw, -2.8vh);
+    
+}
+
+
+#formName {
+    grid-area: name;
+}
+
+#formEmail {
+    grid-area: email;
+}
+
+#formCel {
+    grid-area: cel;
+}
+
+#formCelInput::placeholder {
+    color: transparent;
+    text-shadow: none;
+    transition: 0.2s;
+}
+
+#formCelInput:focus::placeholder {
+    color: gray;
+    text-shadow: 0px 0.2vh var(--shadowColor);
+    transition: 0.2s;
+}
+
+#formSubject {
+    grid-area: subject;
+}
+
+#formMessage {
+    grid-area: message;
+    margin-bottom: 2vh;
+}
+
+#formSubmit {
+    grid-area: submit;
+    position: relative;
+    right: -3vw;
+    margin-top: 3vh;
+    color: var(--text-color);
+    align-self: end;
+    justify-self: right;
+
+    font-family: 'Krona One';
+    background-color: var(--submit-color);
+
+    width: 150px;
+    height:65px;
+    transition: 0.2s;
+    z-index:1
+
+}
+
+#formSubmit:hover {
+    transform: scale(1.1);
+    rotate: 3deg;
+    background-color: var(--submit-color-hover);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+form {
+
+    width: 85%;
+    height: fit-content;
+    grid-template-areas:
+    'name name'
+    'email email'
+    'subject subject' 
+    'cel cel'
+    'message submit';
+    grid-template-rows: unset;
+    margin-bottom: 12.5vh;
+}
+
+form div label {
+    left: 2.5vw;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label{
+    transform: scale(0.7) translate(-3.5vw, -2.8vh);
+    
+}
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Dolga</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicons/favicons4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <img src="imgs/icons/image 2.png" alt="Home" onclick="animatedRedirect('index.html')"></div></li>
+            <li><img src="imgs/icons/image 1.png" alt="Codes" onclick="animatedRedirect('codes.html')"></li>
+            <li> <img src="imgs/icons/image 3.png" alt="Galeria" onclick="animatedRedirect('gallery.html')"></li>
+            <li id="excludedIcon" > <img src="imgs/icons/image 4.png" alt="Contato"></li>
+            <a href="https://github.com/MatheusDolga" target="_blank"><li> <img src="imgs/icons/image 5.png" alt="Github"></li></a>
+        </ul>
+    </nav>
+    <main id="filledMain">
+        <div>
+            <h1 id="title">Contato</h1>
+        </div>
+
+        <form action="https://formsubmit.co/matheusdolga@gmail.com">
+            <div id="formName">
+                
+                <input type="text" name="formName" placeholder=" ">
+                <label for="">Nome:</label>
+
+            </div>
+            <div id="formEmail">
+                
+                <input type="email" name="formEmail" placeholder=" ">
+                <label for="">Email:</label>
+
+            </div>
+            <div id="formCel">
+                
+                <input type="tel" name="formCel" id="formCelInput" placeholder="+XX-XXXX-XXXX" oninput="phoneMasking('formCelInput')">
+                <label for="">Telefone:</label>
+
+            </div>
+            <div id="formSubject">
+                
+                <input type="text" name="formSubject" placeholder=" ">
+                <label for="">Assunto:</label>
+
+            </div>
+            <div id="formMessage">
+                
+                <textarea name="formMessage" cols="30" rows="10" placeholder=" " ></textarea>
+                <label for="">Mensagem:</label>
+
+            </div>
+            <input type="submit" name="formSubmit" id="formSubmit">
+
+        </form>
+        
+    </main>
+    <footer>
+        <div>
+            <div>matheusdolga@gmail.com</div>
+            <img src="imgs/icons/nightmode.png" onclick="switchColors()">
+        </div>     
+    </footer>
+    <div id="transitionFade"></div>
+</body>
+</html>
