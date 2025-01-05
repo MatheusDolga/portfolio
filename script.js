@@ -49,17 +49,17 @@ function phoneMasking(inputName) {
         }
     }
 
-    if (myString.length > 8)
+    if (myString.length > 9)
     {
-        if (myString.charAt(8) != "-") {
-            myString = myString.slice(0,8) + "-" + myString.slice(9,myString.length)
+        if (myString.charAt(9) != "-") {
+            myString = myString.slice(0,9) + "-" + myString.slice(10,myString.length)
         }
     }
 
     console.log(myString)
 
-    if (myString.length > 13)
-    {myString = myString.slice(0,13)}
+    if (myString.length > 14)
+    {myString = myString.slice(0,14)}
 
     if (myString.indexOf(",") > -1)
     {
