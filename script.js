@@ -80,7 +80,7 @@ function openImagePopup(imageIndex) {
     let myImages = [
         "imgs/0047.gif",
         "imgs/0101.gif",
-        "imgs/gift_neon.png",
+        "imgs/chara_void_render2.png",
         "imgs/KromerSmile.png",
         "imgs/tanea.png",
         "imgs/hdwgh_dersetheme_new.png",
