@@ -16,9 +16,9 @@
 
 body {
     background-color: var(--background);
-    background-image: url(imgs/bg1.gif);
+    background-image: url(bg/000.png);
     background-blend-mode: var(--bgBlend);
-    background-size: 2vh 2vh;
+    background-size: 4vh 4vh;
     margin: 0;
     display: grid;
     grid-template-areas: 
@@ -32,6 +32,21 @@ body {
     text-shadow: 0px 0.2vh var(--shadowColor);
     text-align: justify;
     word-wrap: break-word;
+
+    animation: backgroundMovement;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes backgroundMovement {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1280px;
+    }
+    
 }
 
 @keyframes whiteFadeIn {
